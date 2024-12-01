@@ -72,9 +72,9 @@ const App = () => {
         }`}
       >
         <nav
-          className={`fixed top-0 left-0 right-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 ${
-            darkMode ? "bg-gray-800" : "bg-white"
-          } shadow-lg`}
+          className={`fixed top-0 left-0 right-0 z-10 ${
+            darkMode ? 'bg-gray-900/95' : 'bg-white/95'
+          } shadow-lg backdrop-filter backdrop-blur-lg`}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
@@ -163,11 +163,11 @@ const App = () => {
           </div>
         </nav>
         <div
-          className={`md:hidden fixed top-16 right-0 w-56 backdrop-filter backdrop-blur-lg bg-opacity-30 z-10 h-64 ${
-            darkMode ? "bg-gray-800" : "bg-white"
+          className={`md:hidden fixed top-16 right-0 w-56 z-10 h-64 ${
+            darkMode ? 'bg-gray-900/95' : 'bg-white/95'
           } transform ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300 ease-in-out shadow-lg flex flex-col justify-center rounded-lg`}
+          } transition-transform duration-300 ease-in-out shadow-lg flex flex-col justify-center rounded-lg backdrop-filter backdrop-blur-lg`}
         >
           <div className="px-2 pt-4 pb-4 space-y-4 sm:px-3 text-center">
             <Link
