@@ -30,8 +30,8 @@ const App = () => {
       );
       if (!response.ok) throw new Error("Failed to fetch news");
       const data = await response.json();
-      setArticles(data.articles);  // Set articles in state
-      return data.articles;  // Still return for Categories component
+      setArticles(data.articles); 
+      return data.articles;  
     } catch (err) {
       setError(err.message);
       return [];
